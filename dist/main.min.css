@@ -2028,7 +2028,7 @@ template {
     height: 1.3333333333333333rem;
     border: transparent;
     outline: none;
-    background: url("./../../img/player/pause-m.png") center no-repeat; }
+    background: url("./img/player/pause-m.png") center no-repeat; }
   .player__video {
     width: 100%;
     position: relative; }
