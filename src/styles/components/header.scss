@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+
+
+
+  @include mobile {
+    padding: 0;
+  }
+
+  &__logo {
+    margin-right: 40px;
+
+    @include mobile {
+      margin-right: 0px;
+    }
+
+    @include mobile-mini {
+      margin-right: 0px
+    }
+
+  }
+
+  &__phone {
+    padding-top: 4px;
+    position: relative;
+
+    @include mobile-mini-landscape {
+      display: none;
+    }
+
+    @include iphoneX-landscape {
+      display: none;
+    }
+
+    @include mobile-landscape {
+      display: none;
+    }
+
+    @include tablets {
+      display: none;
+    }
+
+    &-link {
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+    }
+
+    &-icon {
+      width: 24px;
+      height: 24px;
+      padding-right: 10px;
+      fill: #fff;
+    }
+  }
+}

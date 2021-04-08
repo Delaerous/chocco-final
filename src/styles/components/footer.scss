@@ -1,0 +1,67 @@
+.footer {
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @include tablets {
+    padding: 24px;
+  }
+
+  @include mobile {
+    padding: 20px 0 35px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__address {
+    font-size: 21px;
+    color: $black;
+    font-style: normal;
+
+    @include mobile {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__phone {
+    position: relative;
+
+    @include mobile {
+      margin-bottom: 6px;
+    }
+
+    &-icon {
+      width: 18px;
+      height: 18px;
+      fill: $green;
+      padding-right: 6px;
+    }
+
+    &-link {
+      font-size: 21px;
+      color: $green;
+      display: flex;
+      align-items: center;
+
+      @include mobile {
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,157 @@
+.player-section {
+    position: relative;
+
+    &:before {
+        content: url("../../img/bg/works-decor-1.png");
+        position: absolute;
+        right: 0%;
+        bottom: -15%;
+        z-index: 1;
+
+        @include mobile {
+            width: 161px;
+        }
+    }
+}
+
+
+.player {
+    cursor: pointer;
+
+    &-active .player__start {
+        width: rem(10px);
+        height: 24px;
+        border: transparent;
+        outline: none;
+        background: url("../../img/player/pause.svg")center no-repeat;
+    }
+
+    &__video {
+        width: 100%;
+        position: relative;
+    }
+
+    &__play-icon {
+        width: rem(75px);
+        height: rem(109px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% -50%);
+        fill: $white;
+    }
+
+    &__controls {
+        position: absolute;
+        bottom: 0;
+        height: rem(35px);
+        background: #404040;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: rem(10px) rem(16px);
+    }
+
+    &__start {
+        width: rem(10px);
+        height: 20px;
+        border: transparent;
+        outline: none;
+        background: url("../../img/player/play-mini.png") no-repeat;
+    }
+
+    &__playback {
+        margin-left: rem(27px);
+        width: 70%;
+        height: 4px;
+        background: #626262;
+        border-radius: 2px;
+        position: relative;
+
+        &-line {
+            position: relative;
+            width: 0;
+            height: 100%;
+        }
+
+        &-button {
+            position: absolute;
+            left: 0%;
+            top: 2px;
+            width: rem(12px);
+            height: rem(12px);
+            border-radius: 50%;
+            background: #626262;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__volume {
+        margin-left: rem(23px);
+        width: 15%;
+        height: 4px;
+        background: #626262;
+        border-radius: 2px;
+        position: relative;
+
+        &-icon {
+            margin-left: rem(43px);
+            width: rem(14px);
+            height: rem(17px);
+            fill: #626262;
+        }
+
+        &-button {
+            position: absolute;
+            left: 40%;
+            top: 2px;
+            width: rem(12px);
+            height: rem(12px);
+            border-radius: 50%;
+            background: #626262;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.container-player {
+    &:before {
+        content: url("../../img/bg/works-decor-list-top.png");
+        position: absolute;
+        bottom: 600px;
+        right: -7%;
+
+        @include mobile {
+            top: 67px;
+        }
+
+    }
+
+
+    &::after {
+        content: url("../../img/bg/works-decor-list-bottom.png");
+        position: absolute;
+        bottom: 16px;
+        left: -12%;
+
+
+        @include mobile {
+            left: -12%;
+            bottom: -98px;
+        }
+
+        @include mobile-mini {
+
+            bottom: -200px;
+        }
+    }
+
+    max-width: 700px;
+
+    @include mobile-mini {
+        max-width: 500px;
+        position: absolute;
+        top: 81px;
+        left: 8px;
+    }
+}

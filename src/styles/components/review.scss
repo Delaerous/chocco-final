@@ -1,0 +1,65 @@
+.review{
+  display: flex;
+  position: relative;
+  &__item{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s;
+    @include tablets{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    &-active{
+      opacity: 1;
+      position: static;
+    }
+  }
+  &__avatar{
+    width: 254px;
+    height: 264px;
+    margin-right: 40px;
+    @include tablets{
+      margin-right: 0;
+      width: 130px;
+      height: 130px;
+    }
+  }
+  &__img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  &__text{
+    flex: 1;
+    padding: 24px 0;
+    max-width: 436px;
+    @include tablets{
+      max-width: 100%;
+    }
+    @include mobile{ 
+      padding: 24px 0;
+    }
+  }
+  &__title{
+    color: $black;
+    margin-bottom: 12px;
+  }
+  &__desc{
+    margin-bottom: 26px;
+    @include tablets{
+      margin-bottom: 26px;
+    }
+  }
+  &__author{
+    font-weight: bold;
+    color: $black;
+  }
+}
+ 

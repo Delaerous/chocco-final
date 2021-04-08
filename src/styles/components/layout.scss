@@ -1,0 +1,168 @@
+html,
+body {
+    height: 100%;
+    font-weight: 400;
+}
+
+@function rem($px) {
+    @return $px / $baseFontSize+0rem;
+}
+
+
+
+
+@mixin tablets {
+    @media screen and (max-width: $tablets) and (orientation:portrait) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: $mobile) and (orientation:portrait) {
+        @content;
+    }
+}
+
+@mixin mobile-mini {
+    @media screen and (max-width: $mobile-mini) and (orientation:portrait) {
+        @content;
+    }
+}
+
+@mixin tablets-landscape {
+    @media screen and (device-width: $tablets-landscape) and (orientation:landscape) {
+        @content;
+    }
+}
+
+@mixin iphoneX-landscape {
+    @media screen and (device-height: $iphoneX-landscape) and (orientation:landscape) {
+        @content;
+    }
+}
+
+@mixin mobile-landscape {
+    @media screen and (device-height: $mobile-landscape) and (orientation:landscape) {
+        @content;
+    }
+}
+
+
+@mixin mobile-mini-landscape {
+    @media screen and (device-width: $mobile-mini-landscape) and (orientation:landscape) {
+        @content;
+    }
+}
+
+$blue: #61C4D9;
+$green: #497870;
+$darkGreen: #2E4E3F;
+$gray: #666666;
+$black: #292929;
+$white: #ffffff;
+$containerWidth: 960px;
+$baseFontSize: 18px;
+$headerFontSize: 48px;
+
+
+
+$tablets-landscape:1258px;
+$tablets: 768px;
+$mobile: 480px;
+$mobile-mini: 320px;
+$mobile-mini-landscape: 568px;
+$mobile-landscape:480px;
+$iphoneX-landscape:375px;
+
+html {
+    font-size: $baseFontSize;
+
+    @include tablets {
+        font-size: $baseFontSize - 1px;
+    }
+
+    @include mobile {
+        font-size: $baseFontSize - 2px;
+    }
+
+    @include mobile-mini {
+        font-size: $baseFontSize - 4px;
+    }
+
+    @include iphoneX-landscape {
+        font-size: $baseFontSize - 2px;
+    }
+
+    @include mobile-landscape {
+        font-size: $baseFontSize - 2px;
+    }
+}
+
+body {
+    font-family: 'Alegreya Sans', Helvetica, sans-serif;
+    color: $gray;
+    line-height: 1.42;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+.body__block {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.maincontent {
+    height: 100%;
+    transition: transform 1s;
+    will-change: transform;
+}
+
+.container {
+    max-width: $containerWidth;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}

@@ -1,0 +1,44 @@
+.checkbox {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__icon {
+    width: 10px;
+    height: 10px;
+    fill: #2E4E3F;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  &__elem {
+    position: absolute;
+    left: -9999px;
+
+    &:checked + .checkbox__visible > .checkbox__icon {
+      display: block;
+    }
+  }
+
+  &__visible {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    background: $white;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  &__title{
+    color: $green;
+  }
+
+}

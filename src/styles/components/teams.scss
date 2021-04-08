@@ -1,0 +1,117 @@
+.head {
+    display: flex;
+    justify-content: center;
+
+    &__title {
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        color: #292929;
+        font-size: 48px;
+        padding-bottom: 32px;
+    }
+}
+
+.team {
+    display: flex;
+
+
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @include tablets {
+            margin-right: 0;
+        }
+    }
+
+    &__member {
+        margin-bottom: 20px;
+    }
+
+    &__desc {
+        text-align: center;
+        font-weight: 300;
+    }
+
+    &__description {
+        height: 0;
+        overflow: hidden;
+        transition: .3s;
+        position: absolute;
+        top: 100%;
+        max-width: 233px;
+
+        &-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @include tablets {
+            position: relative;
+            top: 0;
+        }
+    }
+
+    &__arrow {
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 10px solid $darkGreen;
+
+        &_up {
+            border-bottom: 10px solid $darkGreen;
+            border-top: 0;
+        }
+    }
+
+    &__about {
+        display: flex;
+        align-items: baseline;
+        cursor: pointer;
+        border: 0;
+        background: transparent;
+        outline: none;
+        margin-bottom: 21px;
+    }
+
+    &__prof {
+        color: #292929;
+        font-weight: 400;
+
+        @include tablets {
+            font-weight: bold;
+        }
+    }
+
+    &__name {
+        margin-right: 5px;
+        font-size: 21px;
+        font-weight: bold;
+        color: #292929;
+    }
+
+    @include tablets {
+        display: none;
+    }
+
+    &-mobile {
+        display: none;
+
+        @include tablets {
+            display: block;
+        }
+    }
+
+}
