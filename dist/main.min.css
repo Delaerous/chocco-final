@@ -2541,7 +2541,7 @@ template {
     top: 5%;
     width: 7.111111111111111rem;
     height: 9.777777777777779rem;
-    background: url("/../img/bg/reviews-leaf.png") center/contain no-repeat; }
+    background: url("./img/bg/reviews-leaf.png") center/contain no-repeat; }
     @media screen and (max-width: 320px) and (orientation: portrait) {
       .reviews__display:before {
         width: 6rem; } }
