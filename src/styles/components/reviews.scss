@@ -73,7 +73,7 @@
       bottom: -80px;
       width: 135px;
       height: 200px;
-      background: url("./../img/bg/reviews-decor-2.png") center/contain no-repeat;
+      background: url("./img/bg/reviews-decor-2.png") center/contain no-repeat;
 
       @include mobile {
         bottom: -150px;
@@ -103,7 +103,7 @@
       top: 5%;
       width: 128px;
       height: 176px;
-      background: url('./../img/bg/reviews-leaf.png') center / contain no-repeat;
+      background: url('./img/bg/reviews-leaf.png') center / contain no-repeat;
 
       @include mobile-mini {
         width: 108px;

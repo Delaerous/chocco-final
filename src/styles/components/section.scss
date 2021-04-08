@@ -30,14 +30,6 @@
       top: 90px;
       left: 80px;
       color: #fff;
-
-      &::before {
-        content: url('./../img/bg/raspberry.png');
-        position: absolute;
-        z-index: 1;
-        left: -60px;
-        top: -144px
-      }
     }
   }
 }

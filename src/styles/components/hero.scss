@@ -70,16 +70,18 @@
       }
     }
 
-    background: url('../img/bg/chocco.png') right center / 52% auto no-repeat;
+    background: url('./img/bg/chocco.png') right center / 52% auto no-repeat;
 
 
-    @include mobile-mini-landscape {
-      background: url('../img/bg/chocco-full.png') right top / 52% auto no-repeat;
-    }
 
     @include tablets {
       background: none;
     }
+
+    @include mobile-mini-landscape {
+      background: url('./img/bg/chocco-full.png') right top / 52% auto no-repeat;
+    }
+
 
     &__full {
       width: 100%;
@@ -117,9 +119,9 @@
 
       &::before {
         content: "";
-        background: url('../img/bg/chocco-full.png') center center / contain no-repeat;
-        width: 316px;
-        height: 330px;
+        background: url('./img/bg/chocco-full.png') center center / contain no-repeat;
+        width: 600px;
+        height: 600px;
         margin-bottom: 16px;
       }
     }

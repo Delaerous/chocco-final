@@ -2,7 +2,7 @@
     position: relative;
 
     &:before {
-        content: url("..../../../img/bg/works-decor-1.png");
+        content: url("./img/bg/works-decor-1.png");
         position: absolute;
         right: 0%;
         bottom: -15%;
@@ -23,7 +23,7 @@
         height: 24px;
         border: transparent;
         outline: none;
-        background: url("..../../../img/player/pause.svg")center no-repeat;
+        background: url("./img/player/pause-m.png")center no-repeat;
     }
 
     &__video {
@@ -57,7 +57,7 @@
         height: 20px;
         border: transparent;
         outline: none;
-        background: url("..../../../img/player/play-mini.png") no-repeat;
+        background: url("./img/player/play-mini.png") no-repeat;
     }
 
     &__playback {
@@ -116,7 +116,7 @@
 
 .container-player {
     &:before {
-        content: url("..../../../img/bg/works-decor-list-top.png");
+        content: url("./img/bg/works-decor-list-top.png");
         position: absolute;
         bottom: 600px;
         right: -7%;
@@ -129,7 +129,7 @@
 
 
     &::after {
-        content: url("..../../../img/bg/works-decor-list-bottom.png");
+        content: url("./img/bg/works-decor-list-bottom.png");
         position: absolute;
         bottom: 16px;
         left: -12%;
