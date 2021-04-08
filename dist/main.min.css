@@ -1271,10 +1271,10 @@ ul li {
       @media screen and (device-height: 480px) and (orientation: landscape) {
         .hero__container::before {
           display: none; } }
-    @media screen and (device-width: 568px) and (orientation: landscape) {
-      .hero__container {
-        background: url("./img/bg/chocco-full.png") right top/52% auto no-repeat; } }
     @media screen and (max-width: 768px) and (orientation: portrait) {
+      .hero__container {
+        background: none; } }
+    @media screen and (device-width: 568px) and (orientation: landscape) {
       .hero__container {
         background: url("./img/bg/chocco-full.png") right top/52% auto no-repeat; } }
     .hero__container__full {
@@ -1306,8 +1306,8 @@ ul li {
         .hero__text::before {
           content: "";
           background: url("./img/bg/chocco-full.png") center center/contain no-repeat;
-          width: 17.555555555555557rem;
-          height: 18.333333333333332rem;
+          width: 33.333333333333336rem;
+          height: 33.333333333333336rem;
           margin-bottom: 0.8888888888888888rem; } }
     @media screen and (max-width: 480px) and (orientation: portrait) {
       .hero__text {
@@ -1545,8 +1545,8 @@ ul li {
     content: url("./img/bg/raspberry.png");
     position: absolute;
     z-index: 1;
-    left: -3.3333333333333335rem;
-    top: -8rem; }
+    left: 1rem;
+    top: -4.444444444444445rem; }
     @media screen and (max-width: 768px) and (orientation: portrait) {
       .menu-section::after {
         left: -0.333333rem;
@@ -2028,7 +2028,7 @@ template {
     height: 1.3333333333333333rem;
     border: transparent;
     outline: none;
-    background: url("./img/player/pause.png") center no-repeat; }
+    background: url("./../../img/player/pause-m.png") center no-repeat; }
   .player__video {
     width: 100%;
     position: relative; }
@@ -2520,7 +2520,7 @@ template {
     bottom: -4.444444444444445rem;
     width: 7.5rem;
     height: 11.11111111111111rem;
-    background: url("/../img/bg/reviews-decor-2.png") center/contain no-repeat; }
+    background: url("./img/bg/reviews-decor-2.png") center/contain no-repeat; }
     @media screen and (max-width: 480px) and (orientation: portrait) {
       .reviews-section:after {
         bottom: -8.333333333333334rem; } }
