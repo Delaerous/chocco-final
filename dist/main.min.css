@@ -1273,7 +1273,7 @@ ul li {
           display: none; } }
     @media screen and (device-width: 568px) and (orientation: landscape) {
       .hero__container {
-        background: url("../../img/bg/chocco-full.png") right top/52% auto no-repeat; } }
+        background: url("./img/bg/chocco-full.png") right top/52% auto no-repeat; } }
     @media screen and (max-width: 768px) and (orientation: portrait) {
       .hero__container {
         background: none; } }
