@@ -2406,7 +2406,7 @@ template {
 
 .reviews-section {
   position: relative;
-  background: url("..../../img/bg/reviews-decor-1.png") right 2% top 6% no-repeat;
+  background: url("./img/bg/reviews-decor-1.png") right 2% top 6% no-repeat;
   z-index: 10; }
   @media screen and (max-width: 768px) and (orientation: portrait) {
     .reviews-section {
@@ -2439,7 +2439,7 @@ template {
     transform: translateY(-50%);
     width: 7.5rem;
     height: 10.722222222222221rem;
-    background: url("..../../img/bg/reviews-decor-2.png") bottom left/contain no-repeat; }
+    background: url("./img/bg/reviews-decor-2.png") bottom left/contain no-repeat; }
     @media screen and (max-width: 768px) and (orientation: portrait) {
       .reviews-section::after {
         width: 6.555555555555555rem;
@@ -2628,7 +2628,7 @@ template {
       left: 4.444444444444445rem;
       color: #fff; }
       .section__title-menu::before {
-        content: url("../../img/bg/raspberry.png");
+        content: url("./img/bg/raspberry.png");
         position: absolute;
         z-index: 1;
         left: -3.3333333333333335rem;
