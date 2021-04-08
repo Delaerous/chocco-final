@@ -765,7 +765,7 @@ ul li {
     .benefits-section {
       margin-bottom: 4.888888888888889rem; } }
   .benefits-section::before {
-    content: url("..../..../../img/bg/benefits-decor-1.png");
+    content: url("..../../img/bg/benefits-decor-1.png");
     position: absolute;
     left: 0;
     top: 50%;
@@ -783,7 +783,7 @@ ul li {
       .benefits-section::before {
         content: none; } }
   .benefits-section::after {
-    content: url("..../..../../img/bg/benefits-decor-2.png");
+    content: url("..../../img/bg/benefits-decor-2.png");
     position: absolute;
     left: 0;
     bottom: -18%;
@@ -1258,7 +1258,7 @@ ul li {
     min-height: 100vh;
     padding-top: 1.1111111111111112rem;
     padding-bottom: 2.7777777777777777rem;
-    background: url("../img/bg/chocco.png") right center/52% auto no-repeat; }
+    background: url("../../img/bg/chocco.png") right center/52% auto no-repeat; }
     .hero__container::before {
       content: url("..../../img/bg/hero-decor-1.png");
       position: absolute;
@@ -1273,7 +1273,7 @@ ul li {
           display: none; } }
     @media screen and (device-width: 568px) and (orientation: landscape) {
       .hero__container {
-        background: url("../img/bg/chocco-full.png") right top/52% auto no-repeat; } }
+        background: url("../../img/bg/chocco-full.png") right top/52% auto no-repeat; } }
     @media screen and (max-width: 768px) and (orientation: portrait) {
       .hero__container {
         background: none; } }
@@ -2002,7 +2002,7 @@ template {
 .player-section {
   position: relative; }
   .player-section:before {
-    content: url("..../../../img/bg/works-decor-1.png");
+    content: url("/../../img/bg/works-decor-1.png");
     position: absolute;
     right: 0%;
     bottom: -15%;
@@ -2018,7 +2018,7 @@ template {
     height: 1.3333333333333333rem;
     border: transparent;
     outline: none;
-    background: url("..../../../img/player/pause.svg") center no-repeat; }
+    background: url("../../img/player/pause.svg") center no-repeat; }
   .player__video {
     width: 100%;
     position: relative; }
@@ -2044,7 +2044,7 @@ template {
     height: 1.1111111111111112rem;
     border: transparent;
     outline: none;
-    background: url("..../../../img/player/play-mini.png") no-repeat; }
+    background: url("../../img/player/play-mini.png") no-repeat; }
   .player__playback {
     margin-left: 1.5rem;
     width: 70%;
@@ -2090,7 +2090,7 @@ template {
 .container-player {
   max-width: 38.888888888888886rem; }
   .container-player:before {
-    content: url("..../../../img/bg/works-decor-list-top.png");
+    content: url("../../img/bg/works-decor-list-top.png");
     position: absolute;
     bottom: 33.333333333333336rem;
     right: -7%; }
@@ -2098,7 +2098,7 @@ template {
       .container-player:before {
         top: 3.7222222222222223rem; } }
   .container-player::after {
-    content: url("..../../../img/bg/works-decor-list-bottom.png");
+    content: url("/../../img/bg/works-decor-list-bottom.png");
     position: absolute;
     bottom: 0.8888888888888888rem;
     left: -12%; }
@@ -2348,38 +2348,6 @@ template {
     margin-right: 0.5555555555555556rem;
     cursor: pointer; }
 
-.section-reviews {
-  position: relative;
-  background: url(../img/icons/review-berry2.png) right top/contain no-repeat;
-  background-size: 7.555555555555555rem 4.333333333333333rem;
-  z-index: 3; }
-  .section-reviews::before {
-    content: "";
-    background: url(../img/icons/review-bg1.png) right bottom/contain no-repeat;
-    width: 5.555555555555555rem;
-    height: 17.77777777777778rem;
-    position: absolute;
-    bottom: -8.666666666666666rem;
-    left: 0; }
-    @media screen and (max-width: 480px) and (orientation: portrait) {
-      .section-reviews::before {
-        width: 3.7777777777777777rem;
-        height: 15.11111111111111rem;
-        bottom: -6rem; } }
-  .section-reviews::after {
-    content: "";
-    background: url(../img/icons/review-berry.png) right bottom/contain no-repeat;
-    width: 7.555555555555555rem;
-    height: 10.666666666666666rem;
-    position: absolute;
-    bottom: -4rem;
-    left: 0; }
-    @media screen and (max-width: 480px) and (orientation: portrait) {
-      .section-reviews::after {
-        width: 4.888888888888889rem;
-        height: 8.88888888888889rem;
-        bottom: -3.111111111111111rem; } }
-
 .review {
   display: flex;
   position: relative; }
@@ -2542,7 +2510,7 @@ template {
     bottom: -4.444444444444445rem;
     width: 7.5rem;
     height: 11.11111111111111rem;
-    background: url("./../img/bg/reviews-decor-2.png") center/contain no-repeat; }
+    background: url("/../img/bg/reviews-decor-2.png") center/contain no-repeat; }
     @media screen and (max-width: 480px) and (orientation: portrait) {
       .reviews-section:after {
         bottom: -8.333333333333334rem; } }
@@ -2563,7 +2531,7 @@ template {
     top: 5%;
     width: 7.111111111111111rem;
     height: 9.777777777777779rem;
-    background: url("./../img/bg/reviews-leaf.png") center/contain no-repeat; }
+    background: url("/../img/bg/reviews-leaf.png") center/contain no-repeat; }
     @media screen and (max-width: 320px) and (orientation: portrait) {
       .reviews__display:before {
         width: 6rem; } }
@@ -2660,7 +2628,7 @@ template {
       left: 4.444444444444445rem;
       color: #fff; }
       .section__title-menu::before {
-        content: url("./../img/bg/raspberry.png");
+        content: url("../../img/bg/raspberry.png");
         position: absolute;
         z-index: 1;
         left: -3.3333333333333335rem;
