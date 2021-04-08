@@ -19,14 +19,14 @@
   }
 
   &:before {
-    content: url("../img/bg/product-leaf.png");
+    content: url("..../../img/bg/product-leaf.png");
     position: absolute;
     bottom: -211px;
     right: 0%;
   }
 
   &::after {
-    content: url("../img/bg/product-decor.png");
+    content: url("..../../img/bg/product-decor.png");
     position: absolute;
     bottom: -90px;
     right: 0%;
