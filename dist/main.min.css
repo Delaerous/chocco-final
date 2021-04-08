@@ -1273,10 +1273,10 @@ ul li {
           display: none; } }
     @media screen and (device-width: 568px) and (orientation: landscape) {
       .hero__container {
-        background: url("../../img/bg/chocco-full.png") right top/52% auto no-repeat; } }
+        background: url("./img/bg/chocco-full.png") right top/52% auto no-repeat; } }
     @media screen and (max-width: 768px) and (orientation: portrait) {
       .hero__container {
-        background: none; } }
+        background: url("./img/bg/chocco-full.png") right top/52% auto no-repeat; } }
     .hero__container__full {
       width: 100%; }
   .hero__text {
@@ -1541,6 +1541,16 @@ ul li {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.2); }
+  .menu-section::after {
+    content: url("./img/bg/raspberry.png");
+    position: absolute;
+    z-index: 1;
+    left: -3.3333333333333335rem;
+    top: -8rem; }
+    @media screen and (max-width: 768px) and (orientation: portrait) {
+      .menu-section::after {
+        left: -0.333333rem;
+        top: -4rem; } }
 
 .menu {
   flex: 1;
@@ -2018,7 +2028,7 @@ template {
     height: 1.3333333333333333rem;
     border: transparent;
     outline: none;
-    background: url("./img/player/pause.svg") center no-repeat; }
+    background: url("./img/player/pause.png") center no-repeat; }
   .player__video {
     width: 100%;
     position: relative; }
@@ -2044,7 +2054,7 @@ template {
     height: 1.1111111111111112rem;
     border: transparent;
     outline: none;
-    background: url("../../img/player/play-mini.png") no-repeat; }
+    background: url("./img/player/play-mini.png") no-repeat; }
   .player__playback {
     margin-left: 1.5rem;
     width: 70%;
@@ -2090,7 +2100,7 @@ template {
 .container-player {
   max-width: 38.888888888888886rem; }
   .container-player:before {
-    content: url("../../img/bg/works-decor-list-top.png");
+    content: url("./img/bg/works-decor-list-top.png");
     position: absolute;
     bottom: 33.333333333333336rem;
     right: -7%; }
@@ -2098,7 +2108,7 @@ template {
       .container-player:before {
         top: 3.7222222222222223rem; } }
   .container-player::after {
-    content: url("/../../img/bg/works-decor-list-bottom.png");
+    content: url("./img/bg/works-decor-list-bottom.png");
     position: absolute;
     bottom: 0.8888888888888888rem;
     left: -12%; }
@@ -2627,12 +2637,6 @@ template {
       top: 5rem;
       left: 4.444444444444445rem;
       color: #fff; }
-      .section__title-menu::before {
-        content: url("./img/bg/raspberry.png");
-        position: absolute;
-        z-index: 1;
-        left: -3.3333333333333335rem;
-        top: -8rem; }
 
 .products {
   background: #F8FAF9; }
