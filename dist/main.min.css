@@ -702,7 +702,7 @@ ul li {
       align-items: flex-start;
       margin-bottom: 0.8333333333333334rem; } }
   .benefit::before {
-    content: url("../img/benefits/seporate.png");
+    content: url("..../../img/benefits/seporate.png");
     position: absolute;
     left: calc(100% - 20px);
     top: 3.4444444444444446rem; }
@@ -765,7 +765,7 @@ ul li {
     .benefits-section {
       margin-bottom: 4.888888888888889rem; } }
   .benefits-section::before {
-    content: url("../img/bg/benefits-decor-1.png");
+    content: url("..../..../../img/bg/benefits-decor-1.png");
     position: absolute;
     left: 0;
     top: 50%;
@@ -783,7 +783,7 @@ ul li {
       .benefits-section::before {
         content: none; } }
   .benefits-section::after {
-    content: url("../img/bg/benefits-decor-2.png");
+    content: url("..../..../../img/bg/benefits-decor-2.png");
     position: absolute;
     left: 0;
     bottom: -18%;
@@ -1220,11 +1220,11 @@ ul li {
 .hero {
   min-height: 100vh;
   color: #ffffff;
-  background: url("../img/bg/leaf.png") right bottom no-repeat;
+  background: url("..../../img/bg/leaf.png") right bottom no-repeat;
   background-color: #61C4D9;
   position: relative; }
   .hero::before {
-    content: url("../img/bg/hero-decor-2.png");
+    content: url("..../../img/bg/hero-decor-2.png");
     position: absolute;
     bottom: -2.5rem;
     left: 4.444444444444445rem;
@@ -1260,7 +1260,7 @@ ul li {
     padding-bottom: 2.7777777777777777rem;
     background: url("../img/bg/chocco.png") right center/52% auto no-repeat; }
     .hero__container::before {
-      content: url("../img/bg/hero-decor-1.png");
+      content: url("..../../img/bg/hero-decor-1.png");
       position: absolute;
       bottom: -2.5rem;
       left: 27.77777777777778rem;
@@ -1954,12 +1954,12 @@ template {
   display: none; }
 
 .order-section {
-  background: url("../img/bg/form-bg.png") no-repeat;
+  background: url("..../../img/bg/form-bg.png") no-repeat;
   background-size: cover;
   color: #497870;
   position: relative; }
   .order-section:before {
-    content: url("../img/bg/order-decor-1.png");
+    content: url("..../../img/bg/order-decor-1.png");
     position: absolute;
     right: 2%;
     bottom: 10%; }
@@ -1970,7 +1970,7 @@ template {
       .order-section:before {
         content: none; } }
   .order-section:after {
-    content: url("../img/bg/order-decor-2.png");
+    content: url("..../../img/bg/order-decor-2.png");
     position: absolute;
     left: 2%;
     bottom: 10%; }
@@ -2002,7 +2002,7 @@ template {
 .player-section {
   position: relative; }
   .player-section:before {
-    content: url("../../img/bg/works-decor-1.png");
+    content: url("..../../../img/bg/works-decor-1.png");
     position: absolute;
     right: 0%;
     bottom: -15%;
@@ -2018,7 +2018,7 @@ template {
     height: 1.3333333333333333rem;
     border: transparent;
     outline: none;
-    background: url("../../img/player/pause.svg") center no-repeat; }
+    background: url("..../../../img/player/pause.svg") center no-repeat; }
   .player__video {
     width: 100%;
     position: relative; }
@@ -2044,7 +2044,7 @@ template {
     height: 1.1111111111111112rem;
     border: transparent;
     outline: none;
-    background: url("../../img/player/play-mini.png") no-repeat; }
+    background: url("..../../../img/player/play-mini.png") no-repeat; }
   .player__playback {
     margin-left: 1.5rem;
     width: 70%;
@@ -2090,7 +2090,7 @@ template {
 .container-player {
   max-width: 38.888888888888886rem; }
   .container-player:before {
-    content: url("../../img/bg/works-decor-list-top.png");
+    content: url("..../../../img/bg/works-decor-list-top.png");
     position: absolute;
     bottom: 33.333333333333336rem;
     right: -7%; }
@@ -2098,7 +2098,7 @@ template {
       .container-player:before {
         top: 3.7222222222222223rem; } }
   .container-player::after {
-    content: url("../../img/bg/works-decor-list-bottom.png");
+    content: url("..../../../img/bg/works-decor-list-bottom.png");
     position: absolute;
     bottom: 0.8888888888888888rem;
     left: -12%; }
@@ -2132,12 +2132,12 @@ template {
     .products {
       margin-bottom: 3.2777777777777777rem; } }
   .products:before {
-    content: url("../img/bg/product-leaf.png");
+    content: url("..../../img/bg/product-leaf.png");
     position: absolute;
     bottom: -11.722222222222221rem;
     right: 0%; }
   .products::after {
-    content: url("../img/bg/product-decor.png");
+    content: url("..../../img/bg/product-decor.png");
     position: absolute;
     bottom: -5rem;
     right: 0%; }
@@ -2438,7 +2438,7 @@ template {
 
 .reviews-section {
   position: relative;
-  background: url("../img/bg/reviews-decor-1.png") right 2% top 6% no-repeat;
+  background: url("..../../img/bg/reviews-decor-1.png") right 2% top 6% no-repeat;
   z-index: 10; }
   @media screen and (max-width: 768px) and (orientation: portrait) {
     .reviews-section {
@@ -2454,7 +2454,7 @@ template {
     transform: translateY(-60%);
     width: 5.666666666666667rem;
     height: 17.833333333333332rem;
-    background: url("../img/bg/reviews-decor-3.png") bottom left/contain no-repeat; }
+    background: url("..../../img/bg/reviews-decor-3.png") bottom left/contain no-repeat; }
     @media screen and (max-width: 768px) and (orientation: portrait) {
       .reviews-section::before {
         width: 5rem;
@@ -2471,7 +2471,7 @@ template {
     transform: translateY(-50%);
     width: 7.5rem;
     height: 10.722222222222221rem;
-    background: url("../img/bg/reviews-decor-2.png") bottom left/contain no-repeat; }
+    background: url("..../../img/bg/reviews-decor-2.png") bottom left/contain no-repeat; }
     @media screen and (max-width: 768px) and (orientation: portrait) {
       .reviews-section::after {
         width: 6.555555555555555rem;
