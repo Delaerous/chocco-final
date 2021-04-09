@@ -1475,7 +1475,8 @@ ul li {
   bottom: 0;
   display: flex; }
   .card-menu__item {
-    display: flex; }
+    display: flex;
+    z-index: 10; }
   .card-menu__image {
     width: 100%;
     display: block;
