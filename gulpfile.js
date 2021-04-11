@@ -15,7 +15,6 @@ const svgo = require("gulp-svgo");
 const svgSprite = require("gulp-svg-sprite");
 const gulpif = require("gulp-if");
 const imagemin = require("gulp-imagemin");
-const px2rem = require("gulp-smile-px2rem");
 
 const env = process.env.NODE_ENV;
 
@@ -56,13 +55,7 @@ task("styles", () => {
     .pipe(concat("main.min.scss"))
     .pipe(sassGlob())
     .pipe(sass().on("error", sass.logError))
-    .pipe(
-      px2rem({
-        dpr: 1, // base device pixel ratio (default: 2)
-        rem: 18, // root element (html) font-size (default: 16)
-        one: false, // whether convert 1px to rem (default: false)
-      })
-    )
+
     .pipe(
       gulpif(
         env === "prod",

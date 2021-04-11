@@ -34,6 +34,7 @@
     "gulp-uglify": "^3.0.2",
     "jquery-touchswipe": "^1.6.19",
     "node-normalize-scss": "^8.1.2",
+    "node-px2rem": "^2.0.5",
     "node-sass": "^4.14.1"
   }
 }
