@@ -1,0 +1,37 @@
+.headline {
+  text-align: center;
+  margin-bottom: rem(46px);
+
+  @include mobile-mini {
+    margin-bottom: rem(10px);
+  }
+
+
+  &__title {
+    margin-bottom: rem(13px);
+    color: $black;
+
+    @include tablets {
+      margin-bottom: 0;
+    }
+
+
+  }
+
+  &__subtitle {
+    max-width: 44%;
+    margin: 0 auto;
+
+    @include tablets {
+      max-width: 50%;
+      margin: 0 auto;
+    }
+
+    @include mobile {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+  }
+
+}

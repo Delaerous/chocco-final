@@ -1,0 +1,217 @@
+.reviews {
+  @include mobile-mini {
+    padding-top: 23px;
+  }
+
+  &__section-title {
+    margin-bottom: rem(32px);
+
+    @include mobile-mini {
+      margin-bottom: rem(50px);
+    }
+  }
+
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 12%;
+
+    @include tablets {
+      padding: 0;
+    }
+
+
+  }
+
+  &__title {
+    font-size: rem(27px);
+    font-weight: 700;
+    margin-bottom: rem(10px);
+    color: black;
+  }
+
+  &__text {
+    margin-bottom: rem(22px);
+    line-height: 1.3;
+
+  }
+
+  &__author {
+    font-weight: 500;
+    color: black;
+  }
+
+  &__switcher {
+    display: flex;
+    justify-content: center;
+
+    &-item {
+      margin-right: rem(4px);
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    @include mobile {
+      background-size: 35%
+    }
+
+    ;
+
+
+
+
+
+    @include iphoneX-landscape {
+      margin-bottom: rem(100px);
+    }
+
+
+
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: rem(-80px);
+      width: rem(135px);
+      height: rem(200px);
+      background: url("./img/bg/reviews-decor-2.png") center/contain no-repeat;
+
+      @include mobile {
+        bottom: rem(-150px);
+      }
+
+
+
+
+    }
+
+  }
+
+  &__display {
+    background: #F8FAF9;
+    padding: rem(50px) rem(45px) rem(34px);
+    margin-bottom: rem(15px);
+    position: relative;
+    overflow: hidden;
+
+    @include tablets {
+      padding-right: 27px
+    }
+
+    @include mobile-mini {
+      padding: 0px;
+    }
+
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 5%;
+      width: rem(128px);
+      height: rem(176px);
+      background: url('./img/bg/reviews-leaf.png') center / contain no-repeat;
+
+      @include mobile {
+        max-width: 27%;
+      }
+
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: rem(90px);
+      height: rem(90px);
+      background: #fff;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: rem(-65px);
+
+      @include mobile {
+        display: none;
+      }
+
+
+    }
+
+
+  }
+
+  &__item {
+    display: none;
+
+    @include tablets {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+
+
+
+    @include mobile {
+      min-width: 402px;
+    }
+
+    &-active {
+      display: flex;
+
+      @include mobile-mini {
+        min-width: rem(3px);
+      }
+    }
+  }
+
+  &__avatar {
+    width: rem(254px);
+    height: rem(260px);
+    margin-right: rem(30px);
+
+    @include tablets {
+      width: rem(139px);
+      height: rem(139px);
+      margin-right: 0;
+      margin-bottom: rem(30px);
+    }
+
+    @include mobile-mini {
+      padding-top: 4%;
+    }
+
+
+
+    &-img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    left: 0;
+    bottom: rem(-138px);
+
+    @include mobile {
+      width: rem(84px);
+      height: rem(267px);
+    }
+
+
+
+  }
+}

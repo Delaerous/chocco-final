@@ -1,0 +1,18 @@
+.feature {
+  display: flex;
+  margin-right: rem(53px);
+
+  &:last-child {
+    margin-right: rem(0px);
+  }
+
+  &__icon {
+    fill: #C6F7FF;
+    margin-right: rem(10px);
+  }
+
+  &__text {
+    font-size: rem(16px);
+    line-height: rem(18px);
+  }
+}

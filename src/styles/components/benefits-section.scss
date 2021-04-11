@@ -1,0 +1,60 @@
+.benefits-section {
+  position: relative;
+  padding: rem(56px) 0;
+
+  @include mobile {
+    padding: 0;
+  }
+
+
+
+
+
+  @include iphoneX-landscape {
+    margin-bottom: rem(88px);
+  }
+
+  &::before {
+    content: url("..../../img/bg/benefits-decor-1.png");
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-65%);
+
+    @include tablets {
+      top: 30%;
+    }
+
+    @include mobile {
+      content: none;
+    }
+
+    @include mobile-landscape {
+      content: none;
+    }
+
+
+  }
+
+  &::after {
+    content: url("..../../img/bg/benefits-decor-2.png");
+    position: absolute;
+    left: 0;
+    bottom: -18%;
+    z-index: 1;
+
+    @include mobile {
+      content: none;
+    }
+
+    @include mobile-landscape {
+      content: none;
+    }
+
+
+
+    @include iphoneX-landscape {
+      content: none;
+    }
+  }
+}
