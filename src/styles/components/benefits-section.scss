@@ -1,17 +1,17 @@
 .benefits-section {
   position: relative;
-  padding: 56px 0;
+  padding: rem(56px) 0;
 
-  @include mobile-mini {
-    margin-bottom: 20px;
+  @include mobile {
+    padding: 0;
   }
 
-  @include mobile-mini-landscape {
-    margin-bottom: 88px;
-  }
+
+
+
 
   @include iphoneX-landscape {
-    margin-bottom: 88px;
+    margin-bottom: rem(88px);
   }
 
   &::before {
@@ -33,9 +33,7 @@
       content: none;
     }
 
-    @include mobile-mini-landscape {
-      content: none;
-    }
+
   }
 
   &::after {
@@ -53,9 +51,7 @@
       content: none;
     }
 
-    @include mobile-mini-landscape {
-      content: none;
-    }
+
 
     @include iphoneX-landscape {
       content: none;

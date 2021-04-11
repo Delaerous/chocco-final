@@ -8,8 +8,8 @@
   &::before {
     content: url("..../../img/bg/hero-decor-2.png");
     position: absolute;
-    bottom: -45px;
-    left: 80px;
+    bottom: rem(-45px);
+    left: rem(8px);
     z-index: 1;
 
     @include tablets {
@@ -21,14 +21,24 @@
     }
   }
 
+  &::after {
+    content: url("./img/bg/chocco.png");
+    position: absolute;
+    bottom: rem(81px);
+    right: rem(21px);
 
-  @include mobile-mini-landscape {
-    margin-bottom: 148px;
+    @include tablets {
+      display: none;
+    }
+
+    @include mobile-landscape {
+      content: url("./img/bg/chocco-full.png");
+    }
+
   }
 
-  @include mobile-mini-landscape {
-    margin-bottom: 72px;
-  }
+
+
 
   @include tablets {
     background-position: right bottom 81%;
@@ -40,7 +50,7 @@
   }
 
   @include iphoneX-landscape {
-    margin-bottom: 100px;
+    margin-bottom: rem(100px);
   }
 
 
@@ -51,14 +61,14 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    padding-top: 20px;
-    padding-bottom: 50px;
+    padding-top: rem(20px);
+    padding-bottom: rem(50px);
 
     &::before {
       content: url("..../../img/bg/hero-decor-1.png");
       position: absolute;
-      bottom: -45px;
-      left: 500px;
+      bottom: rem(-45px);
+      left: rem(500px);
       z-index: 1;
 
       @include tablets {
@@ -70,7 +80,7 @@
       }
     }
 
-    background: url('./img/bg/chocco.png') right center / 52% auto no-repeat;
+
 
 
 
@@ -78,9 +88,7 @@
       background: none;
     }
 
-    @include mobile-mini-landscape {
-      background: url('./img/bg/chocco-full.png') right top / 52% auto no-repeat;
-    }
+
 
 
     &__full {
@@ -95,16 +103,13 @@
     margin-top: auto;
 
     @include tablets-landscape {
-      margin-bottom: 100px
+      margin-bottom: rem(100px)
     }
 
-    @include mobile-mini-landscape {
-      max-width: 52%;
-      margin-bottom: 84px;
-    }
+
 
     @include iphoneX-landscape {
-      margin-bottom: 100px;
+      margin-bottom: rem(100px);
     }
 
 
@@ -120,9 +125,9 @@
       &::before {
         content: "";
         background: url('./img/bg/chocco-full.png') center center / contain no-repeat;
-        width: 600px;
-        height: 600px;
-        margin-bottom: 16px;
+        height: 60%;
+        width: 92%;
+        margin-bottom: rem(16px);
       }
     }
 
@@ -132,49 +137,43 @@
   }
 
   &__heading {
-    margin-bottom: 17px;
-    font-size: 48px;
+    margin-bottom: rem(17px);
+    font-size: rem(48px);
     font-weight: 700;
     text-transform: uppercase;
-    line-height: 57.6px;
+    line-height: rem(58px);
 
-    @include mobile-mini-landscape {
-      font-size: 24px;
-      line-height: 30px;
-    }
+
 
     @include tablets {
-      font-size: 48px;
-      margin-bottom: 4px;
+      font-size: rem(48px);
+      margin-bottom: rem(4px);
     }
 
     @include mobile {
       padding: 0 5%;
-      font-size: 40px;
-      line-height: 40px;
+      font-size: rem(40px);
+      line-height: rem(40px);
     }
 
 
   }
 
   &__description {
-    font-size: 21px;
-    margin-bottom: 27px;
+    font-size: rem(21px);
+    margin-bottom: rem(27px);
     max-width: 96%;
 
     @include tablets {
-      padding: 0 23%;
-      margin-bottom: 20px;
+      padding: 0 24%;
+      margin-bottom: rem(20px);
     }
 
     @include mobile {
-      padding: 0 8%;
+      padding: 0 12%;
 
     }
 
-    @include mobile-mini-landscape {
-      display: none;
 
-    }
   }
 }

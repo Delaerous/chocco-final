@@ -1,12 +1,10 @@
 .headline {
   text-align: center;
-  margin-bottom: 46px;
-  @include mobile-mini-landscape {
-    margin-bottom: 0px
-  }
+  margin-bottom: rem(46px);
+
 
   &__title {
-    margin-bottom: 13px;
+    margin-bottom: rem(13px);
     color: $black;
 
     @include tablets {
@@ -16,20 +14,18 @@
 
   &__subtitle {
     max-width: 44%;
-      margin: 0 auto;
+    margin: 0 auto;
 
     @include tablets {
-      max-width: 55%;
+      max-width: 50%;
       margin: 0 auto;
     }
 
     @include mobile {
-      max-width: 85%;
+      max-width: 90%;
       margin: 0 auto;
     }
-    @include mobile-mini-landscape {
-      max-width: 100%
-    }
+
   }
 
 }

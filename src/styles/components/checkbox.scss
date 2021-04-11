@@ -1,5 +1,5 @@
 .checkbox {
-  margin-right: 20px;
+  margin-right: rem(20px);
   display: flex;
   align-items: center;
 
@@ -8,8 +8,8 @@
   }
 
   &__icon {
-    width: 10px;
-    height: 10px;
+    width: rem(10px);
+    height: rem(10px);
     fill: #2E4E3F;
     position: absolute;
     top: 50%;
@@ -20,24 +20,24 @@
 
   &__elem {
     position: absolute;
-    left: -9999px;
+    left: rem(-9999px);
 
-    &:checked + .checkbox__visible > .checkbox__icon {
+    &:checked+.checkbox__visible>.checkbox__icon {
       display: block;
     }
   }
 
   &__visible {
-    width: 24px;
-    height: 24px;
+    width: rem(24px);
+    height: rem(24px);
     position: relative;
     background: $white;
-    margin-right: 10px;
+    margin-right: rem(10px);
     cursor: pointer;
     border-radius: 4px;
   }
 
-  &__title{
+  &__title {
     color: $green;
   }
 

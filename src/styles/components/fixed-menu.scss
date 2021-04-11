@@ -40,8 +40,8 @@
   &:before {
     content: "";
     display: block;
-    width: 6px;
-    height: 6px;
+    width: rem(6px);
+    height: rem(6px);
     border-radius: 50%;
     background: currentColor;
     position: absolute;

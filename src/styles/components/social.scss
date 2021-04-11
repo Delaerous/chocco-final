@@ -2,14 +2,14 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 7px;
+  margin-top: rem(7px);
 
   &__item {
-    margin-right: 15px;
+    margin-right: rem(15px);
     
 
     @include mobile {
-      margin-right: 18px;
+      margin-right: rem(18px);
     }
 
     &:last-child {
@@ -19,8 +19,8 @@
 
   &__icon {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
     fill: #B3B3B3;
     transition: 0.3s;
 

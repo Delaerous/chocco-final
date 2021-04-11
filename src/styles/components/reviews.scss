@@ -1,6 +1,6 @@
 .reviews {
   &__section-title {
-    margin-bottom: 32px;
+    margin-bottom: rem(32px);
   }
 
   &__content {
@@ -14,20 +14,18 @@
       padding: 0;
     }
 
-    @include mobile-mini-landscape {
-      padding: 0;
-    }
+
   }
 
   &__title {
-    font-size: 27px;
+    font-size: rem(27px);
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
     color: black;
   }
 
   &__text {
-    margin-bottom: 22px;
+    margin-bottom: rem(22px);
     line-height: 1.3;
 
   }
@@ -42,7 +40,7 @@
     justify-content: center;
 
     &-item {
-      margin-right: 4px;
+      margin-right: rem(4px);
 
       &:last-child {
         margin-right: 0;
@@ -53,14 +51,18 @@
   &-section {
     position: relative;
 
-
-
-    @include mobile-mini-landscape {
-      margin-bottom: 295px;
+    @include mobile {
+      background-size: 35%
     }
 
+    ;
+
+
+
+
+
     @include iphoneX-landscape {
-      margin-bottom: 100px;
+      margin-bottom: rem(100px);
     }
 
 
@@ -70,18 +72,16 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -80px;
-      width: 135px;
-      height: 200px;
+      bottom: rem(-80px);
+      width: rem(135px);
+      height: rem(200px);
       background: url("./img/bg/reviews-decor-2.png") center/contain no-repeat;
 
       @include mobile {
-        bottom: -150px;
+        bottom: rem(-150px);
       }
 
-      @include mobile-mini-landscape {
-        bottom: -300px;
-      }
+
 
 
     }
@@ -90,10 +90,14 @@
 
   &__display {
     background: #F8FAF9;
-    padding: 50px 45px 34px;
-    margin-bottom: 15px;
+    padding: rem(50px) rem(45px) rem(34px);
+    margin-bottom: rem(15px);
     position: relative;
     overflow: hidden;
+
+    @include tablets {
+      padding-right: 27px
+    }
 
 
     &:before {
@@ -101,39 +105,36 @@
       position: absolute;
       right: 0;
       top: 5%;
-      width: 128px;
-      height: 176px;
+      width: rem(128px);
+      height: rem(176px);
       background: url('./img/bg/reviews-leaf.png') center / contain no-repeat;
 
-      @include mobile-mini {
-        width: 108px;
+      @include mobile {
+        max-width: 27%;
       }
+
     }
 
     &:after {
       content: "";
       display: block;
-      width: 90px;
-      height: 90px;
+      width: rem(90px);
+      height: rem(90px);
       background: #fff;
       border-radius: 50%;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      top: -65px;
+      top: rem(-65px);
 
       @include mobile {
         display: none;
       }
 
-      @include mobile-mini-landscape {
-        display: none;
-      }
+
     }
 
-    @include tablets {
-      margin-bottom: 25px;
-    }
+
   }
 
   &__item {
@@ -145,10 +146,10 @@
       align-items: center;
     }
 
-    @include mobile-mini-landscape {
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
+
+
+    @include mobile {
+      min-width: 402px;
     }
 
     &-active {
@@ -157,23 +158,17 @@
   }
 
   &__avatar {
-    width: 254px;
-    height: 260px;
-    margin-right: 30px;
+    width: rem(254px);
+    height: rem(260px);
+    margin-right: rem(30px);
 
     @include tablets {
-      width: 139px;
-      height: 139px;
+      width: rem(139px);
+      height: rem(139px);
       margin-right: 0;
-      margin-bottom: 30px;
+      margin-bottom: rem(30px);
     }
 
-    @include mobile-mini-landscape {
-      width: 139px;
-      height: 139px;
-      margin-right: 0;
-      margin-bottom: 15px;
-    }
 
     &-img {
       object-fit: cover;
@@ -186,16 +181,14 @@
   &__decor {
     position: absolute;
     left: 0;
-    bottom: -138px;
+    bottom: rem(-138px);
 
     @include mobile {
-      width: 84px;
-      height: 267px;
+      width: rem(84px);
+      height: rem(267px);
     }
 
 
-    @include mobile-mini-landscape {
-      margin-bottom: -300px;
-    }
+
   }
 }

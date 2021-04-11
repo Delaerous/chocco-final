@@ -19,13 +19,13 @@
 
     &__title {
         position: relative;
-        width: 70px;
+        width: rem(70px);
 
         &:after {
             content: "";
             display: block;
             top: 0;
-            bottom: 0px;
+            bottom: rem(0px);
             left: 0;
             right: 0;
             position: absolute;
@@ -42,7 +42,7 @@
         transform-origin: 0 0;
         white-space: nowrap;
         line-height: 1;
-        font-size: 40px;
+        font-size: rem(48px);
         font-weight: bold;
     }
 
@@ -52,17 +52,19 @@
         position: relative;
         overflow: hidden;
         transition: width .7s;
+        font-size: 16px;
+
 
     }
 
     &__container {
-        padding: 40px 73px 45px 26px;
+        padding: rem(40px) rem(73px) rem(45px) rem(26px);
     }
 
     &__close {
         position: absolute;
-        top: 20px;
-        right: 25px;
+        top: rem(20px);
+        right: rem(25px);
         border: none;
         background: transparent;
         outline: none;
@@ -70,8 +72,8 @@
 
 
         &-icon {
-            width: 18px;
-            height: 18px;
+            width: rem(18px);
+            height: rem(18px);
             display: block;
             fill: $white;
             transition: .3s;

@@ -12,25 +12,21 @@
   }
 
   &__logo {
-    margin-right: 40px;
+    margin-right: rem(40px);
 
     @include mobile {
-      margin-right: 0px;
+      margin-right: rem(0px);
     }
 
-    @include mobile-mini {
-      margin-right: 0px
-    }
+
 
   }
 
   &__phone {
-    padding-top: 4px;
+    padding-top: rem(4px);
     position: relative;
 
-    @include mobile-mini-landscape {
-      display: none;
-    }
+
 
     @include iphoneX-landscape {
       display: none;
@@ -45,15 +41,15 @@
     }
 
     &-link {
-      font-size: 22px;
+      font-size: rem(22px);
       display: flex;
       align-items: center;
     }
 
     &-icon {
-      width: 24px;
-      height: 24px;
-      padding-right: 10px;
+      width: rem(24px);
+      height: rem(24px);
+      padding-right: rem(10px);
       fill: #fff;
     }
   }

@@ -2,10 +2,7 @@
   background: #F8FAF9;
   position: relative;
 
-  @include mobile-mini-landscape {
-    margin-bottom: 170px;
-    min-height: 524px;
-  }
+
 
   &-container {
     display: flex;
@@ -15,21 +12,25 @@
   }
 
   @include iphoneX-landscape {
-    margin-bottom: 59px;
+    margin-bottom: rem(59px);
   }
 
   &:before {
     content: url("..../../img/bg/product-leaf.png");
     position: absolute;
-    bottom: -211px;
+    bottom: rem(-211px);
     right: 0%;
   }
 
   &::after {
     content: url("..../../img/bg/product-decor.png");
     position: absolute;
-    bottom: -90px;
+    bottom: rem(-50px);
     right: 0%;
+    max-height: 15%;
+    bottom: -3rem;
+    right: 0%;
+    max-width: 15%;
   }
 }
 
@@ -40,19 +41,13 @@
     position: relative;
     width: 58%;
 
-    @include mobile-mini-landscape {
-      top: 27px;
-    }
+
 
     &__png {
       max-height: 100%;
       object-fit: cover;
       margin: auto;
 
-      @include mobile-mini-landscape {
-        max-width: 46%;
-        display: block;
-      }
 
       @include iphoneX-landscape {
         max-width: 46%;
@@ -62,36 +57,32 @@
     }
 
     @include tablets {
-      width: 362px;
-      height: 342px;
+      width: rem(362px);
+      height: rem(342px);
     }
 
     @include mobile {
-      height: 300px;
+      height: rem(300px);
     }
 
-    @include mobile-mini-landscape {
-      width: 362px;
-      height: 150px;
-    }
 
     @include iphoneX-landscape {
-      width: 362px;
-      height: 150px;
+      width: rem(362px);
+      height: rem(150px);
     }
 
   }
 
   &__title {
-    font-size: 36px;
+    font-size: rem(36px);
     font-weight: bold;
     color: black;
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
     text-transform: uppercase;
 
     @include iphoneX-landscape {
       text-align: center;
-      font-size: 18px;
+      font-size: $baseFontSize;
       margin-bottom: 0;
     }
 
@@ -99,7 +90,7 @@
   }
 
   &__text {
-    margin-bottom: 12px;
+    margin-bottom: rem(12px);
 
     @include mobile {
       max-width: 81%;
@@ -118,10 +109,7 @@
     align-items: center;
   }
 
-  @include mobile-mini-landscape {
-    flex-direction: column;
-    align-items: center;
-  }
+
 
   @include iphoneX-landscape {
     flex-direction: column;
@@ -141,10 +129,8 @@
         text-align: center;
       }
 
-      @include mobile-mini-landscape {
-        width: 70%;
-        text-align: center;
-      }
+
+
 
       @include mobile {
         width: 100%;
@@ -159,15 +145,13 @@
   &__info {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
 
     @include tablets {
       justify-content: center;
     }
 
-    @include mobile-mini-landscape {
-      justify-content: center;
-    }
+
 
     @include iphoneX-landscape {
       justify-content: center;
@@ -185,10 +169,10 @@
     flex-wrap: wrap;
 
     &-price {
-      font-size: 60px;
+      font-size: rem(60px);
       font-weight: 300;
       color: black;
-      margin-right: 38px;
+      margin-right: rem(38px);
       white-space: nowrap;
     }
 
@@ -197,10 +181,7 @@
       flex-wrap: nowrap;
     }
 
-    @include mobile-mini-landscape {
-      justify-content: center;
-      flex-wrap: nowrap;
-    }
+
 
     @include iphoneX-landscape {
       justify-content: center;
@@ -227,10 +208,7 @@
     top: 22%;
   }
 
-  @include mobile-mini-landscape {
-    left: 29%;
-    top: 14%;
-  }
+
 
   @include iphoneX-landscape {
     left: 34%;
@@ -261,17 +239,19 @@
     top: 22%;
   }
 
-  @include mobile-mini-landscape {
-    right: 4%;
-  }
+
 
   @include iphoneX-landscape {
     right: 34%;
     top: 14%;
   }
 
-  @include mobile-mini-landscape {
-    right: 29%;
-    top: 14%;
+
+}
+
+
+.bx-viewport {
+  @include mobile-landscape {
+    height: 450 !important;
   }
 }

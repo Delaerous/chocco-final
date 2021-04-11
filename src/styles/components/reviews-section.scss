@@ -18,48 +18,47 @@
     left: 0;
     top: 100%;
     transform: translateY(-60%);
-    width: 102px;
-    height: 321px;
+    width: rem(102px);
+    height: rem(321px);
     background: url("..../../img/bg/reviews-decor-3.png") bottom left / contain no-repeat;
 
     @include tablets {
-      width: 90px;
-      height: 282px;
+      width: rem(90px);
+      height: rem(282px);
     }
 
     @include mobile {
-      width: 75px;
-      height: 235px;
+
+      max-width: 15%;
     }
   }
 
   &::after {
     content: "";
     position: absolute;
-    left: -10px;
+    left: rem(-10px);
     top: 100%;
     transform: translateY(-50%);
-    width: 135px;
-    height: 193px;
+    width: rem(135px);
+    height: rem(193px);
     background: url("./img/bg/reviews-decor-2.png") bottom left / contain no-repeat;
 
     @include tablets {
-      width: 118px;
-      height: 170px;
+      width: rem(118px);
+      height: rem(170px);
     }
 
     @include mobile {
-      width: 122px;
-      height: 176px;
-      left: -34px;
+      max-width: 15%;
+      left: rem(-34px);
     }
   }
 
   &__title {
-    margin-bottom: 32px;
+    margin-bottom: rem(32px);
 
     @include mobile {
-      margin-bottom: 20px;
+      margin-bottom: rem(20px);
     }
   }
 

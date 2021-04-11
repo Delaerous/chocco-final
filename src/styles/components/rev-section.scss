@@ -1,34 +1,40 @@
-.section-reviews{
-    position: relative;
-    background: url(../img/icons/review-berry2.png) right top/ contain no-repeat;
-    background-size: 136px 78px ;
-    z-index: 3;
-    &::before{
-      content: "";
-      background:url(../img/icons/review-bg1.png)right bottom/ contain no-repeat;
-      width: 100px;
-      height: 320px;
-      position: absolute;
-      bottom: -156px;
-      left: 0;
-      @include mobile{
-        width: 68px;
-        height: 272px;
-        bottom: -108px;
-      }
-    }
-    &::after{
-      content: "";
-      background:url(../img/icons/review-berry.png) right bottom / contain  no-repeat;
-      width: 136px;
-      height: 192px;
-      position: absolute;
-      bottom: -72px;
-      left: 0;
-      @include mobile{
-        width: 88px;
-         height: 160px; 
-         bottom: -56px; 
-      }
+.section-reviews {
+  position: relative;
+  background: url(../img/icons/review-berry2.png) right top/ contain no-repeat;
+  background-size: rem(136px) rem(78px);
+  z-index: 3;
+
+  &::before {
+    content: "";
+    background: url(../img/icons/review-bg1.png)right bottom/ contain no-repeat;
+    width: rem(100px);
+    height: rem(320px);
+    position: absolute;
+    bottom: rem(-156px);
+    left: 0;
+
+    @include mobile {
+      width: rem(68px);
+      height: rem(272px);
+      bottom: rem(-108px);
+
     }
   }
+
+  &::after {
+    content: "";
+    background: url(../img/icons/review-berry.png) right bottom / contain no-repeat;
+    width: rem(136px);
+    height: rem(192px);
+    position: absolute;
+    bottom: rem(-72px);
+    left: 0;
+
+    @include mobile {
+      width: rem(88px);
+      height: rem(160px);
+      bottom: rem(-56px);
+      max-width: 15%;
+    }
+  }
+}

@@ -7,8 +7,8 @@
         text-transform: uppercase;
         text-align: center;
         color: #292929;
-        font-size: 48px;
-        padding-bottom: 32px;
+        font-size: rem(48px);
+        padding-bottom: rem(32px);
     }
 }
 
@@ -22,7 +22,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        margin-right: 20px;
+        margin-right: rem(20px);
 
         &:last-child {
             margin-right: 0;
@@ -34,7 +34,7 @@
     }
 
     &__member {
-        margin-bottom: 20px;
+        margin-bottom: rem(20px);
     }
 
     &__desc {
@@ -48,7 +48,7 @@
         transition: .3s;
         position: absolute;
         top: 100%;
-        max-width: 233px;
+        max-width: 24%;
 
         &-block {
             display: flex;
@@ -60,6 +60,12 @@
         @include tablets {
             position: relative;
             top: 0;
+            max-width: 24%;
+            min-width: 252px;
+        }
+
+        @include mobile {
+            min-width: 252px;
         }
     }
 

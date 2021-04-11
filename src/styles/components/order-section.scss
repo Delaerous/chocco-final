@@ -17,9 +17,7 @@
       content: none;
     }
 
-    @include mobile-mini-landscape {
-      content: none;
-    }
+
   }
 
   &:after {
@@ -32,9 +30,7 @@
       content: none;
     }
 
-    @include mobile-mini-landscape {
-      content: none;
-    }
+
 
     @include iphoneX-landscape {
       bottom: 0%;
@@ -43,21 +39,21 @@
 
   &__title {
     color: inherit;
-    margin-bottom: 54px;
+    margin-bottom: rem(54px);
     position: relative;
     z-index: 10;
 
     @include tablets {
-      margin-bottom: 20px;
+      margin-bottom: rem(20px);
     }
 
     @include mobile {
-      margin-bottom: 28px;
+      margin-bottom: rem(28px);
     }
 
     @include iphoneX-landscape {
-      top: 0px;
-      margin-bottom: 0px;
+      top: rem(0px);
+      margin-bottom: rem(0px);
     }
   }
 }

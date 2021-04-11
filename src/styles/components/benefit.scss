@@ -9,14 +9,14 @@
     flex-direction: row;
     text-align: left;
     align-items: flex-start;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
   }
 
   &::before {
     content: url("..../../img/benefits/seporate.png");
     position: absolute;
     left: calc(100% - 20px);
-    top: 62px;
+    top: rem(62px);
 
     @include tablets {
       content: none;
@@ -30,8 +30,8 @@
 
   &__image-wrap {
     background: #F2F5F4;
-    width: 128px;
-    height: 128px;
+    width: rem(128px);
+    height: rem(128px);
     border-radius: 50%;
     position: relative;
     overflow: hidden;
@@ -39,20 +39,15 @@
     justify-content: center;
     align-items: center;
 
-    @include mobile-mini-landscape {
-      width: 84px;
-      height: 84px;
-      top: 27px;
-    }
   }
 
 
 
   &__image {
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 
     @include mobile {
-      margin-right: 10px;
+      margin-right: rem(10px);
     }
   }
 
@@ -65,23 +60,23 @@
   }
 
   &__title {
-    font-size: 27px;
+    font-size: rem(27px);
     color: $black;
-    margin-bottom: 14px;
+    margin-bottom: rem(14px);
 
     @include tablets {
-      margin-bottom: 6px;
+      margin-bottom: rem(6px);
     }
 
     @include mobile {
-      margin-bottom: 10px;
+      margin-bottom: rem(10px);
     }
   }
 
   &__description {
 
     @include mobile {
-      line-height: 22px;
+      line-height: rem(22px);
       max-width: 98%;
       font-weight: 300;
 

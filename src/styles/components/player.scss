@@ -1,157 +1,292 @@
-.player-section {
-    position: relative;
+.video {
+    max-width: rem(660px);
+    max-height: rem(405px);
+    margin-top: rem(35px);
+    margin-bottom: rem(35px);
 
-    &:before {
-        content: url("./img/bg/works-decor-1.png");
-        position: absolute;
-        right: 0%;
-        bottom: -15%;
-        z-index: 1;
+    @include tablets {
+        max-width: rem(591px);
+        max-height: rem(363px);
+        margin-top: 0;
+    }
 
-        @include mobile {
-            width: 161px;
-        }
+    @include mobile {
+        max-width: rem(421px);
+        max-height: rem(296px);
     }
 }
 
-
-.player {
+.video__player {
+    width: 100%;
+    outline: none;
+    display: block;
+    position: relative;
+    object-fit: cover;
     cursor: pointer;
+}
 
-    &-active .player__start {
-        width: rem(10px);
-        height: 24px;
-        border: transparent;
-        outline: none;
-        background: url("./img/player/pause-m.png")center no-repeat;
-    }
+.video__controls {
+    width: 100%;
+    height: rem(30px);
+    background-color: #3e3e3e;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: rem(10px);
+    padding-left: rem(10px);
+}
 
-    &__video {
-        width: 100%;
-        position: relative;
-    }
+.video__cursor {
+    height: rem(16px);
+    flex: 1 2 rem(444px);
+    position: relative;
+    margin-right: 2%;
+    cursor: pointer;
+    margin: 3%;
 
-    &__play-icon {
-        width: rem(75px);
-        height: rem(109px);
+    &::before {
+        content: "";
+        height: rem(4px);
         position: absolute;
         top: 50%;
-        left: 50%;
-        transform: translate(-50% -50%);
-        fill: $white;
+        left: 0;
+        right: 0;
+        background-color: #626262;
+        display: block;
+        transform: translateY(-50%);
     }
+}
 
-    &__controls {
+.video__cursor-btn {
+    width: rem(12px);
+    height: rem(12px);
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #626262;
+    border-radius: rem(50px);
+    border: none;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.video__volume {
+    height: rem(16px);
+    flex: 1 1 rem(60px);
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        height: rem(4px);
         position: absolute;
-        bottom: 0;
-        height: rem(35px);
-        background: #404040;
+        top: 50%;
+        left: 0;
+        right: 0;
+        background-color: #626262;
+        display: block;
+        transform: translateY(-50%);
+    }
+}
+
+.video__volume-button {
+    width: rem(12px);
+    height: rem(12px);
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    background-color: #626262;
+    border-radius: 50px;
+    border: none;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.player-section {
+    background-color: #f8faf9;
+    background-image: url("./img/player/player-leaf1.png"), url("./img/player/player-leaf1.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 89% 16%, 7% 89%;
+    position: relative;
+
+    @include tablets {
+        min-height: rem(613px);
+        background-position: 95% 25%, 0% 70%;
+        background-size: rem(55px);
+    }
+
+    @include mobile {
+        min-height: rem(510px);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: rem(222px);
+        height: rem(244px);
+        background-image: url("./img/player/blackberry.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        bottom: rem(-110px);
+        right: rem(-50px);
+        z-index: 1;
+
+        @include tablets {
+            width: rem(136px);
+            height: rem(148px);
+            background-size: contain;
+            bottom: rem(-60px);
+            right: rem(-40px);
+        }
+
+
+        @include mobile {
+            bottom: rem(-70px);
+            right: rem(-30px);
+        }
+    }
+
+
+}
+
+
+
+.container-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+.btn-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.btn-play--big {
+    position: absolute;
+    opacity: 0.9;
+    top: 55%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    max-width: rem(200px);
+    max-height: rem(200px);
+    height: 100%;
+    width: 100%;
+
+    @include mobile {
+        max-width: rem(140px);
+        max-height: rem(140px);
+        top: 55%;
+    }
+
+    .btn-play__icon {
+        display: block;
         width: 100%;
-        display: flex;
-        align-items: center;
-        padding: rem(10px) rem(16px);
-    }
+        height: 100%;
+        fill: white;
+        cursor: pointer;
 
-    &__start {
-        width: rem(10px);
-        height: 20px;
-        border: transparent;
-        outline: none;
-        background: url("./img/player/play-mini.png") no-repeat;
-    }
-
-    &__playback {
-        margin-left: rem(27px);
-        width: 70%;
-        height: 4px;
-        background: #626262;
-        border-radius: 2px;
-        position: relative;
-
-        &-line {
-            position: relative;
-            width: 0;
-            height: 100%;
-        }
-
-        &-button {
-            position: absolute;
-            left: 0%;
-            top: 2px;
-            width: rem(12px);
-            height: rem(12px);
-            border-radius: 50%;
-            background: #626262;
-            transform: translateY(-50%);
-        }
-    }
-
-    &__volume {
-        margin-left: rem(23px);
-        width: 15%;
-        height: 4px;
-        background: #626262;
-        border-radius: 2px;
-        position: relative;
-
-        &-icon {
-            margin-left: rem(43px);
-            width: rem(14px);
-            height: rem(17px);
-            fill: #626262;
-        }
-
-        &-button {
-            position: absolute;
-            left: 40%;
-            top: 2px;
-            width: rem(12px);
-            height: rem(12px);
-            border-radius: 50%;
-            background: #626262;
-            transform: translateY(-50%);
+        &:hover {
+            fill: white;
         }
     }
 }
 
-.container-player {
-    &:before {
-        content: url("./img/bg/works-decor-list-top.png");
-        position: absolute;
-        bottom: 600px;
-        right: -7%;
 
-        @include mobile {
-            top: 67px;
-        }
+.btn-play__icon {
+    display: block;
+    height: rem(18px);
+    width: rem(35px);
+    fill: #626262;
+    transition: fill .3s;
+    cursor: pointer;
 
+    &:hover {
+        fill: #d7d7d7;
     }
+}
 
+.btn-pause__icon {
+    display: none;
+    height: rem(18px);
+    width: rem(35px);
+    fill: #626262;
+    transition: fill .3s;
+    margin-right: 2%;
 
-    &::after {
-        content: url("./img/bg/works-decor-list-bottom.png");
-        position: absolute;
-        bottom: 16px;
-        left: -12%;
-
-
-        @include mobile {
-            left: -12%;
-            bottom: -98px;
-        }
-
-        @include mobile-mini {
-
-            bottom: -200px;
-        }
+    &:hover {
+        fill: #d7d7d7;
     }
+}
 
-    max-width: 700px;
 
-    @include mobile-mini {
-        max-width: 500px;
-        position: absolute;
-        top: 81px;
-        left: 8px;
+
+.btn-volume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-right: rem(10px);
+    position: relative;
+}
+
+.btn-volume__icon {
+    height: rem(18px);
+    width: rem(18px);
+    fill: #626262;
+    transition: fill .3s;
+    cursor: pointer;
+
+    &:hover {
+        fill: #d7d7d7;
     }
+}
+
+.btn-volume__line {
+    display: none;
+    position: absolute;
+    height: rem(2px);
+    width: rem(18px);
+    background-color: #d7d7d7;
+    transform: rotate(45deg);
+    cursor: pointer;
+
+
+}
+
+.btn-volume__line-first {
+    display: none;
+    position: absolute;
+    height: rem(2px);
+    width: rem(18px);
+    background-color: #d7d7d7;
+    transform: rotate(45deg);
+    cursor: pointer;
+
+
+
+}
+
+.btn-volume__line-second {
+    display: none;
+    position: absolute;
+    height: rem(2px);
+    width: rem(18px);
+    background-color: #d7d7d7;
+    transform: rotate(-45deg);
+    cursor: pointer;
+
+
+
 }
