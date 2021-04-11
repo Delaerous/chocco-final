@@ -2869,6 +2869,8 @@ template {
 
 .team {
   display: flex; }
+  .team-sect {
+    flex-direction: column; }
   .team__item {
     display: flex;
     flex-direction: column;
