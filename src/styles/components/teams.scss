@@ -15,7 +15,9 @@
 .team {
     display: flex;
 
-
+    &-sect {
+        flex-direction: column;
+    }
 
     &__item {
         display: flex;
