@@ -1,0 +1,61 @@
+.modal {
+    background: rgba(00, 00, 00, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+
+    &__container {
+        background: #fff;
+        padding: rem(35px) rem(60px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        max-width: rem(309px);
+        max-height: rem(176px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    &__content {
+        text-align: center;
+        margin-bottom: rem(10px);
+    }
+
+}
+
+.modal-active {
+    display: block;
+}
+
+
+
+.close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: rem(0px);
+    height: 0;
+    cursor: pointer;
+    left: 80%;
+    bottom: 80%;
+    margin: auto;
+}
+
+.close-modal::before,
+.close-modal::after {
+    background: $darkGreen;
+}
+
+
+.error-modal {
+    color: red;
+}

@@ -1,0 +1,31 @@
+.social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: rem(7px);
+
+  &__item {
+    margin-right: rem(15px);
+    
+
+    @include mobile {
+      margin-right: rem(18px);
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    width: rem(20px);
+    height: rem(20px);
+    fill: #B3B3B3;
+    transition: 0.3s;
+
+    &:hover {
+      fill: $black;
+    }
+  }
+}
