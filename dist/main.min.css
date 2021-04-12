@@ -1974,7 +1974,7 @@ template {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-right: 0.55556rem;
+  padding-right: 1.66667rem;
   padding-left: 0.55556rem; }
 
 .video__cursor {
@@ -2012,7 +2012,8 @@ template {
   height: 0.88889rem;
   flex: 1 1 3.33333rem;
   position: relative;
-  cursor: pointer; }
+  cursor: pointer;
+  max-width: 10%; }
   .video__volume::before {
     content: "";
     height: 0.22222rem;
@@ -2586,7 +2587,7 @@ template {
   @media screen and (max-width: 768px) and (orientation: portrait) {
     .reviews__display {
       padding-right: 27px; } }
-  @media screen and (max-width: 320px) and (orientation: portrait) {
+  @media screen and (max-width: 480px) and (orientation: portrait) {
     .reviews__display {
       padding: 0px; } }
   .reviews__display:before {
@@ -2599,7 +2600,7 @@ template {
     background: url("./img/bg/reviews-leaf.png") center/contain no-repeat; }
     @media screen and (max-width: 480px) and (orientation: portrait) {
       .reviews__display:before {
-        max-width: 27%; } }
+        max-width: 24%; } }
   .reviews__display:after {
     content: "";
     display: block;
@@ -2627,6 +2628,9 @@ template {
       min-width: 402px; } }
   .reviews__item-active {
     display: flex; }
+    @media screen and (max-width: 480px) and (orientation: portrait) {
+      .reviews__item-active {
+        min-width: 0.16667rem; } }
     @media screen and (max-width: 320px) and (orientation: portrait) {
       .reviews__item-active {
         min-width: 0.16667rem; } }
