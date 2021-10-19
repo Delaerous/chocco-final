@@ -19,11 +19,11 @@
     
   
       if (isMobile.matches) {
-        itemWidth = screenWidth - titlesWidth
+        itemWidth = screenWidth - titlesWidth;
       }
      
       else {
-        itemWidth = 500
+        itemWidth = 500;
       }
   
       return {

@@ -1,5 +1,5 @@
 .order-section {
-  background: url("..../../img/bg/form-bg.png") no-repeat;
+  background: url("..../../img/bg/form-bg.webp") no-repeat;
   background-size: cover;
   color: $green;
   position: relative;
@@ -8,7 +8,7 @@
 
 
   &:before {
-    content: url("..../../img/bg/order-decor-1.png");
+    content: url("..../../img/bg/order-decor-1.webp");
     position: absolute;
     right: 2%;
     bottom: 10%;
@@ -23,7 +23,7 @@
   }
 
   &:after {
-    content: url("..../../img/bg/order-decor-2.png");
+    content: url("..../../img/bg/order-decor-2.webp");
     position: absolute;
     left: 2%;
     bottom: 10%;

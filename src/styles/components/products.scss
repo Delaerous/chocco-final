@@ -18,14 +18,14 @@
   }
 
   &:before {
-    content: url("..../../img/bg/product-leaf.png");
+    content: url("..../../img/bg/product-leaf.webp");
     position: absolute;
     bottom: rem(-211px);
     right: 0%;
   }
 
   &::after {
-    content: url("..../../img/bg/product-decor.png");
+    content: url("..../../img/bg/product-decor.webp");
     position: absolute;
     bottom: rem(-50px);
     right: 0%;

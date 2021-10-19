@@ -10,11 +10,12 @@ const gcmq = require("gulp-group-css-media-queries");
 const cleanCSS = require("gulp-clean-css");
 const sourcemaps = require("gulp-sourcemaps");
 const babel = require("gulp-babel");
-const uglify = require("gulp-uglify");
+const jsmin = require('gulp-jsmin');
 const svgo = require("gulp-svgo");
 const svgSprite = require("gulp-svg-sprite");
 const gulpif = require("gulp-if");
 const imagemin = require("gulp-imagemin");
+const webp = require('gulp-webp');
 
 const env = process.env.NODE_ENV;
 
@@ -46,6 +47,7 @@ task("content-min", () => {
         imagemin.optipng({ optimizationLevel: 5 }),
       ])
     )
+    .pipe(webp())
     .pipe(dest(`${DIST_PATH}/img`));
 });
 
@@ -66,7 +68,7 @@ task("styles", () => {
       )
     )
     .pipe(gulpif(env === "prod", gcmq()))
-    .pipe(gulpif(env === "prod", cleanCSS()))
+    .pipe(cleanCSS())
     .pipe(gulpif(env === "dev", sourcemaps.write()))
     .pipe(dest(DIST_PATH))
     .pipe(reload({ stream: true }));
@@ -84,7 +86,7 @@ task("scripts", () => {
         })
       )
     )
-    .pipe(gulpif(env === "prod", uglify()))
+    .pipe(jsmin())
     .pipe(gulpif(env === "dev", sourcemaps.write()))
     .pipe(dest(DIST_PATH))
     .pipe(reload({ stream: true }));

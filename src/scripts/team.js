@@ -1,5 +1,5 @@
-const openItem = (item) => {
-    const container = item.closest(".team__item");
+const openItem = (person) => {
+    const container = person.closest(".team__item");
     const contentBlock = container.find(".team__description");
     const textBlock = contentBlock.find(".team__description-block");
     const reqHeight = textBlock.height();

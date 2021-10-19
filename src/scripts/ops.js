@@ -40,7 +40,7 @@ const resetActiveClassForItem = (items, itemEq, activeClass) => {
 const performTransition = (sectionEq) => {
   if (inScroll) return;
 
-  const transitionOver = 1000;
+  const transitionOver = 100;
   const mouseInertiaOver = 300;
 
   inScroll = true;

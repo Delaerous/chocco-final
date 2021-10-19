@@ -1,12 +1,12 @@
 .hero {
   min-height: 100vh;
   color: $white;
-  background: url('..../../img/bg/leaf.png') right bottom no-repeat;
+  background: url('..../../img/bg/leaf.webp') right bottom no-repeat;
   background-color: $blue;
   position: relative;
 
   &::before {
-    content: url("..../../img/bg/hero-decor-2.png");
+    content: url("..../../img/bg/hero-decor-2.webp");
     position: absolute;
     bottom: rem(-45px);
     left: rem(8px);
@@ -22,7 +22,7 @@
   }
 
   &::after {
-    content: url("./img/bg/chocco.png");
+    content: url("./img/bg/chocco.webp");
     position: absolute;
     bottom: rem(81px);
     right: rem(21px);
@@ -32,7 +32,7 @@
     }
 
     @include mobile-landscape {
-      content: url("./img/bg/chocco-full.png");
+      content: url("./img/bg/chocco-full.webp");
     }
 
   }
@@ -65,7 +65,7 @@
     padding-bottom: rem(50px);
 
     &::before {
-      content: url("..../../img/bg/hero-decor-1.png");
+      content: url("..../../img/bg/hero-decor-1.webp");
       position: absolute;
       bottom: rem(-45px);
       left: rem(500px);
@@ -124,7 +124,7 @@
 
       &::before {
         content: "";
-        background: url('./img/bg/chocco-full.png') center center / contain no-repeat;
+        background: url('./img/bg/chocco-full.webp') center center / contain no-repeat;
         height: 60%;
         width: 92%;
         margin-bottom: rem(16px);

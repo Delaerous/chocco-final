@@ -106,7 +106,7 @@
 
 .player-section {
     background-color: #f8faf9;
-    background-image: url("./img/player/player-leaf2.png"), url("./img/player/player-leaf1.png");
+    background-image: url("./img/player/player-leaf2.webp"), url("./img/player/player-leaf1.webp");
     background-repeat: no-repeat, no-repeat;
     background-position: 89% 16%, 7% 89%;
     position: relative;
@@ -129,7 +129,7 @@
         position: absolute;
         width: rem(222px);
         height: rem(244px);
-        background-image: url("./img/player/blackberry.png");
+        background-image: url("./img/player/blackberry.webp");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;

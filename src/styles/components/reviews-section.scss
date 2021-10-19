@@ -1,6 +1,6 @@
 .reviews-section {
   position: relative;
-  background: url("./img/bg/reviews-decor-1.png") right 2% top 6% no-repeat;
+  background: url("./img/bg/reviews-decor-1.webp") right 2% top 6% no-repeat;
   z-index: 10;
 
   @include tablets {
@@ -20,7 +20,7 @@
     transform: translateY(-60%);
     width: rem(102px);
     height: rem(321px);
-    background: url("..../../img/bg/reviews-decor-3.png") bottom left / contain no-repeat;
+    background: url("..../../img/bg/reviews-decor-3.webp") bottom left / contain no-repeat;
 
     @include tablets {
       width: rem(90px);
@@ -41,7 +41,7 @@
     transform: translateY(-50%);
     width: rem(135px);
     height: rem(193px);
-    background: url("./img/bg/reviews-decor-2.png") bottom left / contain no-repeat;
+    background: url("./img/bg/reviews-decor-2.webp") bottom left / contain no-repeat;
 
     @include tablets {
       width: rem(118px);

@@ -1,12 +1,12 @@
 .section-reviews {
   position: relative;
-  background: url(../img/icons/review-berry2.png) right top/ contain no-repeat;
+  background: url(../img/icons/review-berry2.webp) right top/ contain no-repeat;
   background-size: rem(136px) rem(78px);
   z-index: 3;
 
   &::before {
     content: "";
-    background: url(../img/icons/review-bg1.png)right bottom/ contain no-repeat;
+    background: url(../img/icons/review-bg1.webp)right bottom/ contain no-repeat;
     width: rem(100px);
     height: rem(320px);
     position: absolute;
@@ -23,7 +23,7 @@
 
   &::after {
     content: "";
-    background: url(../img/icons/review-berry.png) right bottom / contain no-repeat;
+    background: url(../img/icons/review-berry.webp) right bottom / contain no-repeat;
     width: rem(136px);
     height: rem(192px);
     position: absolute;
