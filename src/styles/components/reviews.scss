@@ -122,9 +122,11 @@
       width: rem(128px);
       height: rem(176px);
       background: url('./img/bg/reviews-leaf.webp') center / contain no-repeat;
+      
 
       @include mobile {
         max-width: 27%;
+        z-index: -1;
       }
 
     }
